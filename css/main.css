@@ -170,6 +170,9 @@ body {
 .pos-abs {
   position: absolute !important; }
 
+.bold {
+  font-weight: bold !important; }
+
 .bg-video {
   position: absolute;
   top: 0;

@@ -32,6 +32,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 30%; } }
 
 body {
   box-sizing: border-box;
@@ -188,7 +191,7 @@ body {
     object-fit: cover; }
 
 .header {
-  height: 100vh;
+  height: 95vh;
   background-size: cover;
   background-image: linear-gradient(to bottom, #0B0C10, #feffffaf); }
   .header__logo-box {
@@ -228,6 +231,9 @@ body {
   justify-content: space-between;
   align-items: center;
   line-height: 32px; }
+  @media only screen and (max-width: 500px) {
+    .knowmore {
+      line-height: 14px; } }
   .knowmore .btn, .knowmore .btn:link, .knowmore .btn:visited {
     text-decoration: none;
     text-align: center;
@@ -317,6 +323,9 @@ body {
       .me .story__text-content p {
         font-size: var(--f-size-def);
         margin-left: 2rem; }
+        @media only screen and (max-width: 500px) {
+          .me .story__text-content p {
+            font-size: 1.2rem; } }
       .me .story__text-content::before {
         content: "\201C";
         position: absolute;
@@ -360,11 +369,11 @@ body {
 .highlight {
   flex-direction: column; }
   .highlight .gon {
-    width: 100px;
-    height: 180px;
+    width: 10rem;
+    height: 18rem;
     background-color: #04c2c9;
     /* Text styling */
-    line-height: 180px;
+    line-height: 18rem;
     text-align: center;
     font-size: var(--f-size-xl);
     letter-spacing: 6px;
@@ -374,7 +383,7 @@ body {
     fill: #fff;
     transform: scale(2); }
   .highlight .hexa {
-    width: 190px;
+    width: 19rem;
     -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); }
     .highlight .hexa-icon {
